@@ -44,3 +44,15 @@ cv.imwrite()에 원하는 저장 경로를 입력해 개별 이미지 8개를 �
 
 
 ![Gaussian Blur Filter Comparison](./images/elephant/GaussianE.png)
+
+
+### Median Blur
+
+
+![Median Blur Filter Comparison](./images/sketch/MedianS.png)
+
+
+### Gaussian Blur
+
+
+![Gaussian Blur Filter Comparison](./images/sketch/GaussianS.png)
