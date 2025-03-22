@@ -22,6 +22,8 @@ matplotlib을 사용해 결과를 시각화 하고 (cv.imshow()로도 시각화 
 
 cv.imwrite()에 원하는 저장 경로를 입력해 개별 이미지 8개를 각각 저장한다
 
+(Sobel Filter는 (dx = 1, dy = 0)만 사용)
+
 # 렌더링 과정
 
 ## Grayscale - 흑백처리
@@ -51,7 +53,7 @@ Sobel Filter
 
 Canny Filter
 
-- gradient, 최대비 억제, hysteresis 여러 단계를 거쳐 윤곽선을 정교하게 검출한다.
+- gradient, NMS(Non Maximum Suppression), hysteresis의 여러 단계를 거쳐 윤곽선을 정교하게 검출한다.
 - 노이즈에 강하며 정확하고 깔끔한 윤곽선 검출에 유리하다.
 
 Laplacian Filter
@@ -118,7 +120,7 @@ Gaussian Blur를 사용한 이미지가 Median Blur를 사용한 이미지보다
 
 대부분 Adaptive Threshold가 가장 만화같은 스타일을 잘 나타낸다.
 
-Canny Filter는 복잡한 배경에서도 물체의 선을 잘 추출해 내지만 색감 처리에선 어둡게만 나타낸다.
+Canny Filter는 복잡한 배경에서도 물체의 선을 잘 추출해 내지만 색감 처리 과정에서 윤곽선 외 영역의 색상이 제거되서 어둡게만 나타낸다.
 
 Laplacian, Sobel Filter는 배경과 물체 내부의 선을 과도하게 나타낸다.
 
