@@ -78,6 +78,8 @@ Laplacian Filter
 
 ![Gaussian Blur Filter Comparison](./images/dragonball/GaussianD.png)
 
+## 피규어 이미지
+명확한 경계와 단순한 배경으로 윤곽선 처리와 부드러운 색감이 비교적 잘 반영되어 만화같은 느낌이 잘 표현되는 편이다.
 
 ### Median Blur
 
@@ -90,6 +92,8 @@ Laplacian Filter
 
 ![Gaussian Blur Filter Comparison](./images/elephant/GaussianE.png)
 
+## 실사 이미지
+흐릿한 경계와 복잡한 배경으로 코끼리의 형태는 어느정도 남지만 과도하게 강조되거나 뭉개지는 경향이 있다.
 
 ### Median Blur
 
@@ -101,3 +105,12 @@ Laplacian Filter
 
 
 ![Gaussian Blur Filter Comparison](./images/sketch/GaussianS.png)
+
+## 스케치 이미지
+매우 뚜렷한 경계를 가지며 내부 색상이 없는 단색 이미지로 효과가 거의 없다.
+
+## 비교 결론
+Gaussian Blur를 사용한 이미지가 Median Blur를 사용한 이미지보다 좀 더 형태를 잘 나타낸다.
+대부분 Adaptive Threshold가 가장 만화같은 스타일을 잘 나타낸다.
+Canny Filter는 복잡한 배경에서도 물체의 선을 잘 추출해 내지만 색감 처리에선 어둡게만 나타난다.
+Laplacian, Sobel Filter는 배경과 물체 내부의 선을 과도하게 나타낸다.
