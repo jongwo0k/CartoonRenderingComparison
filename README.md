@@ -23,5 +23,6 @@ matplotlib을 사용해 결과를 시각화 하고 (cv.imshow()로도 시각화 
 cv.imwrite()에 원하는 저장 경로를 입력해 개별 이미지 8개를 각각 저장한다
 
 # 결과 비교
-![](./images/dragonball/MedianD.png)
+### Median
+![Median Blur Filter Comparison]![](./images/dragonball/MedianD.png)
 ![](./images/dragonball/GaussianD.png)
