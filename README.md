@@ -24,43 +24,40 @@ cv.imwrite()에 원하는 저장 경로를 입력해 개별 이미지 8개를 �
 
 # 렌더링 과정
 
-## Grayscale
-흑백처리
+## Grayscale - 흑백처리
 명암 정보를 통해 윤곽선을 검출하기 위해 채널을 1개로 줄인다
 
-## Blur
-노이즈 제거
-- Median Blur
+## Blur - 노이즈 제거
+Median Blur
 
-주변 픽셀의 중앙값을 사용하여 노이즈를 제거한다.
-salt & pepper 노이즈 제거에 효과적이며 윤곽선을 잘 보존한다.
+-주변 픽셀의 중앙값을 사용하여 노이즈를 제거한다.
+-salt & pepper 노이즈 제거에 효과적이며 윤곽선을 잘 보존한다.
 
-- Gaussian Blur
+Gaussian Blur
 
-gaussian kernel을 이용해 가중치를 적용하여 노이즈를 제거한다.
-연속적인 노이즈 감소에 유리하다.
+-gaussian kernel을 이용해 가중치를 적용하여 노이즈를 제거한다.
+-연속적인 노이즈 감소에 유리하다.
 
-## Edge Detection
-윤곽선 검출
-- AdaptiveThreshold
+## Edge Detection - 윤곽선 검출
+AdaptiveThreshold
 
-이미지의 밝기에 따라 임계값을 적용하여 이진화해 윤곽선을 검출한다
-조명이 불균일한 경우나 그림자가 있을 때 유리하다.
+-이미지의 밝기에 따라 임계값을 적용하여 이진화해 윤곽선을 검출한다
+-조명이 불균일한 경우나 그림자가 있을 때 유리하다.
 
-- Sobel Filter
+Sobel Filter
 
-수평/수직 기울기를 이용하여 윤곽선을 검출한다
-밝기 변화가 큰 경우 유리하다.
+-수평/수직 기울기를 이용하여 윤곽선을 검출한다
+-밝기 변화가 큰 경우 유리하다.
 
-- Canny Filter
+Canny Filter
 
-gradient, 최대비 억제, hysteresis 여러 단계를 거쳐 윤곽선을 정교하게 검출한다.
-노이즈에 강하며 정확하고 깔끔한 윤곽선 검출에 유리하다.
+-gradient, 최대비 억제, hysteresis 여러 단계를 거쳐 윤곽선을 정교하게 검출한다.
+-노이즈에 강하며 정확하고 깔끔한 윤곽선 검출에 유리하다.
 
-- Laplacian Filter
+Laplacian Filter
 
-두 번 미분을 통해 변곡점을 이용하여 윤곽선을 검출한다.
-노이즈에 민감하고 경계가 두드러지는 경우 유리하다.
+-두 번 미분을 통해 변곡점을 이용하여 윤곽선을 검출한다.
+-노이즈에 민감하고 경계가 두드러지는 경우 유리하다.
 
 ## BilateralFilter
 공간적 거리와 색상 거리를 고려한다.
