@@ -24,5 +24,7 @@ cv.imwrite()에 원하는 저장 경로를 입력해 개별 이미지 8개를 �
 
 # 결과 비교
 ### Median
-![Median Blur Filter Comparison]![](./images/dragonball/MedianD.png)
+
+![Median Blur Filter Comparison](./images/dragonball/MedianD.png)
+
 ![](./images/dragonball/GaussianD.png)
