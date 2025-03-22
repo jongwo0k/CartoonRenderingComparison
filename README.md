@@ -17,3 +17,7 @@ cv.imread()에 원하는 이미지의 경로를 입력해 만화 같은 느낌�
 - Gaussian Blur + Sobel
 - Gaussian Blur + Canny
 - Gaussian Blur + Laplacian
+
+matplotlib을 사용해 결과를 시각화 하고 (imshow로도 시각화 할 수 있다)
+
+cv.imwrite()에 원하는 저장 경로를 입력해 개별 이미지8개를 저장한다
