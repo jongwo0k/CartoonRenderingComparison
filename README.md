@@ -118,7 +118,7 @@ Gaussian Blur를 사용한 이미지가 Median Blur를 사용한 이미지보다
 
 대부분 Adaptive Threshold가 가장 만화같은 스타일을 잘 나타낸다.
 
-Canny Filter는 복잡한 배경에서도 물체의 선을 잘 추출해 내지만 색감 처리에선 어둡게만 나타난다.
+Canny Filter는 복잡한 배경에서도 물체의 선을 잘 추출해 내지만 색감 처리에선 어둡게만 나타낸다.
 
 Laplacian, Sobel Filter는 배경과 물체 내부의 선을 과도하게 나타낸다.
 
