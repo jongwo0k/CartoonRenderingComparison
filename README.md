@@ -74,6 +74,9 @@ Laplacian Filter
 ## 피규어 이미지
 명확한 경계와 단순한 배경으로 윤곽선 처리와 부드러운 색감이 비교적 잘 반영되어 만화같은 느낌이 잘 표현되는 편이다.
 
+### 원본
+
+![Original Image](./images/dragonball/dragonball.png)
 
 ### Median Blur
 
@@ -88,6 +91,10 @@ Laplacian Filter
 ## 실사 이미지
 흐릿한 경계와 복잡한 배경으로 코끼리의 형태는 어느정도 남지만 과도하게 강조되거나 뭉개지는 경향이 있다.
 
+### 원본
+
+![Original Image](./images/elephant/elephant.jpeg)
+
 ### Median Blur
 
 
@@ -101,6 +108,10 @@ Laplacian Filter
 
 ## 스케치 이미지
 매우 뚜렷한 경계를 가지며 내부 색상이 없는 단색 이미지로 효과가 거의 없다.
+
+### 원본
+
+![Original Image](./images/sketch/sketch.png)
 
 ### Median Blur
 
