@@ -84,10 +84,12 @@ plt.show()
 
 # 창으로 출력
 # Display the cartoon image
-# cv.imshow("Cartoon_M_AT", cartoon_M_AT) , ...
-# cv.waitKey(0)
-# cv.destroyAllWindows()
-
+"""
+cv.imshow("Cartoon_M_AT", cartoon_M_AT) , ...
+cv.waitKey(0)
+cv.destroyAllWindows()
+"""
 # 이미지 저장
 for key, image in {**group_M, **group_G}.items():
+
     cv.imwrite(f"cartoon_{key}.png", image)
